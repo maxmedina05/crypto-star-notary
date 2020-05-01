@@ -3,6 +3,9 @@
   <head>
     <title>StarNotary DAPP</title>
     <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   </head>
   <style>
     input {
@@ -11,25 +14,36 @@
     }
   </style>
   <body>
-    <h1>StarNotary Token DAPP</h1>
 
-    <hr>
+    <div class="container">
+      <h1>StarNotary Token DAPP</h1>
 
-    <br>
-      <h1>Create a Star</h1>
-      <br><label for="starName">Star Name:</label><input type="text" id="starName"></input>
-      <br><label for="starId">Star ID:</label><input type="text" id="starId"></input>
-      <br><br><button id="createStar" onclick="App.createStar()">Create Star</button>
-      <br>
       <hr>
+  
       <br>
-      <h1>Look up a Star</h1>
-      <br><label for="name">Star ID:</label><input type="text" id="lookid"></input>
-      <br><br><button onclick="App.lookUp()">Look Up a Star</button>
-      <hr>
-      <br>
-      <span id="status"></span>
-      <br>
+        <div>
+          <h2>Create a Star</h2>
+          <br><label for="starName">Star Name:</label><input type="text" id="starName"></input>
+          <br><label for="starId">Star ID:</label><input type="text" id="starId"></input>
+          <br><br><button class="btn btn-primary" id="createStar" onclick="App.createStar()">Create Star</button>
+        </div>
+        <br>
+        <hr>
+        <br>
+        <div>
+          <h2>Look up a Star</h2>
+          <br><label for="name">Star ID:</label><input type="text" id="lookid"></input>
+          <br><br><button class="btn btn-primary" onclick="App.lookUp()">Look Up a Star</button>
+        </div>
+        <hr>
+        <br>
+        <span id="status"></span>
+        <br>  
+    </div>
+
+      <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
     <script src="index.js"></script>
   </body>
 </html>
